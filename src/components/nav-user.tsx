@@ -122,7 +122,6 @@ export function NavUser({
             <Link
               role="button"
               href="/logout"
-              className="secondary"
               prefetch={false}
               onClick={(event) => {
                 event.preventDefault();

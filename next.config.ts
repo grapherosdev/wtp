@@ -8,7 +8,13 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   devIndicators: false,
-  /* config options here */
+  redirects: async () => [
+    {
+      source: "/logout",
+      destination: "/auth/logout",
+      permanent: true,
+    },
+  ],
 };
 
 export default nextConfig;
