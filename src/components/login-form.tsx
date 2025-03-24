@@ -49,6 +49,8 @@ export function LoginForm({
         </CardHeader>
         <CardContent>
           <form
+            action="/auth/pw-login"
+            method="POST"
             onSubmit={(event) => {
               event.preventDefault();
               const email = emailInputRef.current?.value;
